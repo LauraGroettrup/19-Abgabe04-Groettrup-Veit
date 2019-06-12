@@ -17,7 +17,7 @@
     - Führung Taskliste 
     - Veröffentlichung in Git mit aktuell durchgeführten Tätigkeiten, z.B. Testfälle geschrieben, so wird auch in der Taskliste diese Aufgabe als erledigt markiert und Testfälle inkl. geänderter Taskliste ins Repository übertragen.
 
-- [ ] Korrigieren Sie den Codebzw. Debuggen Sie ihn um die Fehler zu finden.
+- [X] Korrigieren Sie den Codebzw. Debuggen Sie ihn um die Fehler zu finden.
     - Es befinden sich gesamt 3 Fehler im Source Code.
     - Bei Bedarf Optimieren Sie das Queue Beispiel.
     - Ergänzen Sie das Beispiel nach eigenenErmessen um es testen zu können.
