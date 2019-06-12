@@ -1,5 +1,9 @@
 package at.fhj.iit;
 
+/**
+ * This interface acts as a template for queue implementations. 
+ * @author Jessy
+ */
 public interface Queue {
 	
 	/**
