@@ -6,7 +6,6 @@ import java.util.NoSuchElementException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.sun.tools.sjavac.Log;
 // there's some Bugs included, try to debug the code and fix the Bugs
 // there are different Bugs, wrong implementation, typos, ...
 // write Test-Cases (read Queue Interface for understanding methods) and use Debugging possibilies of your IDE
@@ -54,7 +53,7 @@ public class StringQueue implements Queue {
 	public String remove() {
 		String element = poll();		
 		if(element == null) {
-			Log.error("Method remove could not return and delete the first element in queue. There is no element left.");
+			LOG.error("Method remove could not return and delete the first element in queue. There is no element left.");
 			throw new NoSuchElementException("there's no element any more");
 		}
 		LOG.info("Method remove returned and deleted the first element in queue: " + element);
@@ -80,15 +79,11 @@ public class StringQueue implements Queue {
 	public String element() {
 		String element = peek();
 		if(element == null) {
-			Log.error("Method element could not return the first element in queue. There is no element left.");
+			LOG.error("Method element could not return the first element in queue. There is no element left.");
 			throw new NoSuchElementException("there's no element any more");
 		}
 		LOG.info("Method element returned the first element in queue: " + element);
 		return element;
-	}
-	
-	public List<String> getList(){
-		return elements;
 	}
 
 }
