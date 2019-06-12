@@ -26,8 +26,8 @@ public class StringQueue implements Queue {
      * Adds the given string object to the queue. If the addition is successful,
      * the method returns true.
      *
-     * @param obj
-     * @return
+     * @param obj element which will be added
+     * @return true if successful
      */
     @Override
     public boolean offer(String obj) {
@@ -45,7 +45,7 @@ public class StringQueue implements Queue {
      * Returns the head (first) string in the queue and deletes it. Returns null
      * if queue is empty.
      *
-     * @return
+     * @return first string in queue
      */
     @Override
     public String poll() {
@@ -64,7 +64,7 @@ public class StringQueue implements Queue {
      * Returns the head (first) string in the queue and deletes it. Throws
      * NoSuchElementException if queue is empty.
      *
-     * @return
+     * @return first string in queue
      */
     @Override
     public String remove() {
@@ -78,9 +78,10 @@ public class StringQueue implements Queue {
     }
 
     /**
-     * Returns the head (first) string in the queue. Returns null if queue is empty.
+     * Returns the head (first) string in the queue. Returns null if queue is
+     * empty.
      *
-     * @return
+     * @return first string in queue
      */
     @Override
     public String peek() {
@@ -99,7 +100,7 @@ public class StringQueue implements Queue {
      * Returns the head (first) string in the queue. Throws
      * NoSuchElementException if queue is empty.
      *
-     * @return
+     * @return first string in queue
      */
     @Override
     public String element() {

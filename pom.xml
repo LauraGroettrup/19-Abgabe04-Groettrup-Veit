@@ -8,34 +8,34 @@
     <artifactId>Queue</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-	<developers>
-		<developer>
-		  <id>LauraGroettrup</id>
-		  <name>Laura Groettrup</name>
-		  <email>laura.groettrup@edu.fh-joanneum.at</email>
-		  <organization>FH JOANNEUM GmbH</organization>
-		  <organizationUrl>https://www.fh-joanneum.at/iit</organizationUrl>
-		  <roles>
-			<role>Student</role>
-		  </roles>
-		  <timezone>Europe/Vienna</timezone>
+    <developers>
+        <developer>
+            <id>LauraGroettrup</id>
+            <name>Laura Groettrup</name>
+            <email>laura.groettrup@edu.fh-joanneum.at</email>
+            <organization>FH JOANNEUM GmbH</organization>
+            <organizationUrl>https://www.fh-joanneum.at/iit</organizationUrl>
+            <roles>
+                <role>Student</role>
+            </roles>
+            <timezone>Europe/Vienna</timezone>
 		 
-		</developer>     
-		<developer>
-		  <id>JessyVe</id>
-		  <name>Jessica Veit</name>
-		  <email>Jessica.Veit@edu.fh-joanneum.at</email>
-		  <organization>FH JOANNEUM GmbH</organization>
-		  <organizationUrl>https://www.fh-joanneum.at/iit</organizationUrl>
-		  <roles>
-			<role>Student</role>
-		  </roles>
-		  <timezone>Europe/Vienna</timezone>
+        </developer>     
+        <developer>
+            <id>JessyVe</id>
+            <name>Jessica Veit</name>
+            <email>Jessica.Veit@edu.fh-joanneum.at</email>
+            <organization>FH JOANNEUM GmbH</organization>
+            <organizationUrl>https://www.fh-joanneum.at/iit</organizationUrl>
+            <roles>
+                <role>Student</role>
+            </roles>
+            <timezone>Europe/Vienna</timezone>
 		 
-		</developer>     
-	</developers>
+        </developer>     
+    </developers>
 	
-	<build>
+    <build>
         <plugins>
             <plugin>
 			
@@ -52,72 +52,9 @@
                 <artifactId>maven-site-plugin</artifactId>
                 <version>3.7.1</version>
             </plugin>
-			
+          
         </plugins>
-    </build>
-
-     <reporting>
-        <plugins>
-		
-            <!-- maven site for documentation -->
-			<!-- manual upgraded maven site plugin, because 3.3 had an error -->
-            <plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-site-plugin</artifactId>
-                <version>3.7.1</version>
-            </plugin>
-
-			<!-- reporting project information -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-project-info-reports-plugin</artifactId>
-			  <version>3.0.0</version>
-            </plugin>
-
-            <!-- java doc support for maven site -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <reportSets>
-
-                    <!-- reports our javadocs in our src code and test code -->
-                    <reportSet>
-                        <reports>
-                            <report>javadoc</report>
-                            <report>test-javadoc</report>
-                        </reports>
-                    </reportSet>
-
-					<!-- aggregate reportSet, to define in poms having modules -->
-                    <reportSet>
-                        <id>aggregate</id>
-                        <inherited>false</inherited><!-- don't run aggregate in child modules -->
-                        <reports>
-                            <report>aggregate</report>
-                        </reports>
-                    </reportSet>
-                </reportSets>
-            </plugin>
-
-            <!-- integrate test results -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-report-plugin</artifactId>
-            </plugin>
-
-            <!-- Cross References -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jxr-plugin</artifactId>
-            </plugin>
-
-            <!-- integrate test Code Coverage -->
-            <plugin>
-                <artifactId>maven-clover-plugin</artifactId>
-            </plugin>
-			
-        </plugins>
-    </reporting>
+    </build>    
 
     <dependencies>
         <dependency>
@@ -126,8 +63,8 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
-		<!-- Log4j Dependencies -->
-		<dependency>
+        <!-- Log4j Dependencies -->
+        <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-api</artifactId>
             <version>2.11.1</version>
@@ -138,4 +75,75 @@
             <version>2.11.1</version>
         </dependency>
     </dependencies>
+    
+    <reporting>
+        <plugins>
+		
+            <!-- maven site for documentation -->
+            <!-- manual upgraded maven site plugin, because 3.3 had an error -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.7.1</version>
+            </plugin>
+			
+            <!-- reporting project information -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>3.0.0</version>
+            </plugin>
+			
+            <!-- java doc support for maven site -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <reportSets>
+				
+                    <!-- reports our javadocs in our src code and test code -->
+                    <reportSet>
+                        <reports>
+                            <report>javadoc</report>
+                            <report>test-javadoc</report>
+                        </reports>
+                    </reportSet>
+					
+                    <!-- aggregate reportSet, to define in poms having modules -->
+                    <reportSet>
+                        <id>aggregate</id>
+                        <inherited>false</inherited><!-- don't run aggregate in child modules -->
+                        <reports>
+                            <report>aggregate</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+			
+            <!-- integrate test results -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-report-plugin</artifactId>
+            </plugin>
+			
+            <!-- Cross References -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jxr-plugin</artifactId>
+            </plugin>
+			
+            <!-- integrate test Code Coverage -->
+            <plugin>
+                <artifactId>maven-clover-plugin</artifactId>
+            </plugin>
+			
+        </plugins>
+    </reporting>
+    
+    <!-- define SCM and will be read by generating maven site -->
+    <scm>
+        <connection>scm:git:https://github.com/michaelulm/software-configuration-management</connection>
+        <developerConnection>scm:git:https://github.com/michaelulm/software-configuration-management</developerConnection>
+        <tag>HEAD</tag>
+        <url>https://github.com/michaelulm/software-configuration-management</url>
+    </scm>
 </project>
