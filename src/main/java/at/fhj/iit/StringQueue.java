@@ -19,7 +19,7 @@ public class StringQueue implements Queue {
 
 	public StringQueue(int maxsize){
 		LOG.info("Construct a StringQueue with the maxsize = " + maxsize);
-		maxSize = maxSize;
+		this.maxSize = maxsize;
 	}
 	
 	@Override
@@ -40,18 +40,19 @@ public class StringQueue implements Queue {
 	public String poll() {
 		String element = peek();
 		
-		if(elements.size() == 0){
-			LOG.info("Method poll could not return and delete the first element in queue. There is no element left.");
+		if(elements.size() != 0){
+			LOG.info("Method poll returned and deleted the first element in queue: " + element);
 			elements.remove(0);	
 		}
-		LOG.info("Method poll returned and deleted the first element in queue: " + element);
+		else {
+			LOG.info("Method poll could not return and delete the first element in queue. There is no element left.");
+		}
 		return element;
 	}
 
 	@Override
 	public String remove() {
 		String element = poll();		
-		element = "";
 		if(element == null) {
 			Log.error("Method remove could not return and delete the first element in queue. There is no element left.");
 			throw new NoSuchElementException("there's no element any more");
@@ -84,6 +85,10 @@ public class StringQueue implements Queue {
 		}
 		LOG.info("Method element returned the first element in queue: " + element);
 		return element;
+	}
+	
+	public List<String> getList(){
+		return elements;
 	}
 
 }
