@@ -19,7 +19,7 @@
     - Bei Bedarf Optimieren Sie das Queue Beispiel.
     - Ergänzen Sie das Beispiel nach eigenenErmessen um es testen zu können.
 
-- [ ] Erstellen  Sie  für  Klasse  und  alle  Methoden  Kommentare  um  mittels  Javadoc  eine  API Dokumentation zu erzeugen
+- [X] Erstellen  Sie  für  Klasse  und  alle  Methoden  Kommentare  um  mittels  Javadoc  eine  API Dokumentation zu erzeugen
     - Integrieren Sie ein Bild (der generierten Dokumentation) in Ihren Report.
  
 - [X] Erstellung JUnit Tests (vollständig testen, mehrere Varianten)
