@@ -39,7 +39,7 @@
     - Geben Sie eine Error Lognachricht aus bevor Sie einen Fehler werfen.
     - Ergebnisse (Konsolenausgabe) als Bild in Dokumentationeinfließen lassen.
 
-- [ ] Maven Site Dokumentation erstellen
+- [X] Maven Site Dokumentation erstellen
     - Inklusive Javadoc Code und Javadoc Test Klassen
     - Inklusive Menü mit Verweis auf manuell erstellte Seite
     - Seite erläutert Funktionsweise Queue

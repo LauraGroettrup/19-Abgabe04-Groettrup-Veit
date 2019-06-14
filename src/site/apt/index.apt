@@ -1,0 +1,13 @@
+
+Queue 
+
+  Queues are implemented after the First-In-Fist-Out (FIFO) principle.
+  This means that the items are removed from the used collection in the same 
+  order in which they were added to it. 
+
+  For example, it simulates the physical approach of a queuing systems comparable to 
+  waiting in a line - the first will be the first to leave, 
+  with new people being added to the back of the queue.
+
+  When inserting an item into the queue it is called ENQUEUEING, 
+  whereas deleting an item is called DEQUEUEING.
