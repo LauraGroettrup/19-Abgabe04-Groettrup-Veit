@@ -1,4 +1,4 @@
-# Software Configuration Management #
+﻿# Software Configuration Management #
 
 **EDUCATION Repository**
 
@@ -42,9 +42,9 @@
 - [X] Maven Site Dokumentation erstellen
     - Inklusive Javadoc Code und Javadoc Test Klassen
     - Inklusive Menü mit Verweis auf manuell erstellte Seite
-    - Seite erläutert Funktionsweise Queue
+    	- Seite erläutert Funktionsweise Queue
     - Geben Sie ein Bild der Maven Site Dokumentation in den Lab Report
-    - Der Inhalt der manuell erstellten Seite sollte ersichtlich sein
+    	- Der Inhalt der manuell erstellten Seite sollte ersichtlich sein
     
 - [ ] Erstellung detaillierter und nachvollziehbarer Markdown Lab Report
     - Übertragung Information aus Labreport Template.
