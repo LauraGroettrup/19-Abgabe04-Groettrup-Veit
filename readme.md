@@ -59,5 +59,5 @@ https://github.com/LauraGroettrup/19-Abgabe04-Groettrup-Veit
 
 - [X] Überprüfung Vollständigkeit der Abgabe
 
-- [ ] Abgabe PDF Version der Abgabe
+- [X] Abgabe PDF Version der Abgabe
 
