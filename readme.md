@@ -1,16 +1,20 @@
-﻿# Software Configuration Management #
+﻿# 19-Abgabe04-Groettrup-Veit #
 
-**EDUCATION Repository**
+**Abschlussarbeit der Lehrveranstaltung Konfigurationsmanagments SS19**
 
-## Test Automation with JUnit ##
+Laura Gröttrup
+Jessica Veit
 
-### Queue Exercise ###
+https://github.com/LauraGroettrup/19-Abgabe04-Groettrup-Veit
+
+
+## Tasklist ##
 
 - [X] Übertragen Angabe Taskliste in Markdown Readme
 
 - [X] Einspielen  Queue Vorlage aus Repository: https://github.com/michaelulm/software-configuration-management/tree/master/test-automation/Queue
 
-- [ ]  Taskergebnisse Schritt für Schritt auf Git stellen
+- [X]  Taskergebnisse Schritt für Schritt auf Git stellen
     - Führung Taskliste 
     - Veröffentlichung in Git mit aktuell durchgeführten Tätigkeiten, z.B. Testfälle geschrieben, so wird auch in der Taskliste diese Aufgabe als erledigt markiert und Testfälle inkl. geänderter Taskliste ins Repository übertragen.
 
@@ -46,14 +50,14 @@
     - Geben Sie ein Bild der Maven Site Dokumentation in den Lab Report
     	- Der Inhalt der manuell erstellten Seite sollte ersichtlich sein
     
-- [ ] Erstellung detaillierter und nachvollziehbarer Markdown Lab Report
+- [X] Erstellung detaillierter und nachvollziehbarer Markdown Lab Report
     - Übertragung Information aus Labreport Template.
     - Alle Schritte dieser Übung nachvollziehbar erläutern.
     - Übung Github Flavor: Erstellen Sie einen Codeblock im Dokument, welcher 3 Zeilen Python und 3 Zeilen JavaSourceCode korrekt darstellt.
     - Korrekturlesen Dokumentation
     - PDF erstellen (zB Dillinger)
 
-- [ ] Überprüfung Vollständigkeit der Abgabe
+- [X] Überprüfung Vollständigkeit der Abgabe
 
 - [ ] Abgabe PDF Version der Abgabe
 
