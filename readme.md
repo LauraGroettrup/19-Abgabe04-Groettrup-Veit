@@ -3,6 +3,7 @@
 **Abschlussarbeit der Lehrveranstaltung Konfigurationsmanagments SS19**
 
 Laura Gröttrup
+
 Jessica Veit
 
 https://github.com/LauraGroettrup/19-Abgabe04-Groettrup-Veit
